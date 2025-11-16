@@ -15,20 +15,14 @@ lặng, nhẹ, và tự nó hiển bày.
 
 ---
 
-Mỗi dòng chữ ở đây là một tấm gương.  
-Không để bạn trở thành ai khác,  
-mà để bạn nhìn lại chính cái đang nhìn.
-
----
-
 Bạn sẽ không tìm thấy giáo điều dài dòng ở đây.  
 Mỗi đoạn, mỗi ý, chỉ nhằm chặt đứt một vọng tưởng,  
 gỡ một lớp khói che ánh trăng tâm.
 
-Không có pháp để giữ,  
-không có đạo để theo.  
-Chỉ có **cái biết đang biết** —  
-lặng lẽ sáng từ vô thuở.
+>Không có pháp để giữ,  
+>không có đạo để theo.  
+>Chỉ có **cái biết đang biết** —  
+>lặng lẽ sáng từ vô thuở.
 
 ---
 
@@ -36,9 +30,9 @@ Bạn sẽ nhận ra:
 Không có hành trình nào để hoàn thành.  
 Không có “phiên bản tốt hơn của chính mình” để đạt tới.
 
-Chỉ có một **khoảnh khắc đang thở**,  
-và trong khoảnh khắc ấy,  
-bạn vốn đã tròn đầy, chẳng thiếu gì.
+>Chỉ có một **khoảnh khắc đang thở**,  
+>và trong khoảnh khắc ấy,  
+>bạn vốn đã tròn đầy, chẳng thiếu gì.
 
 ---
 
