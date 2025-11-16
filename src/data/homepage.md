@@ -1,6 +1,5 @@
 ---
-layout: ../layouts/AboutLayout.astro
-title: "Reflexify.me"
+title: "Welcome to Reflexify"
 ---
 
 ### _Nơi tâm soi chính mình – không tìm, không nắm, chỉ thấy._
