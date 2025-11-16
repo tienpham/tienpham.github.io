@@ -1,78 +1,24 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import Main from "@/layouts/Main.astro";
+import Layout from "@/layouts/Layout.astro";
+import Tag from "@/components/Tag.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import getUniqueTags from "@/utils/getUniqueTags";
+import { SITE } from "@/config";
 
-const posts = await getCollection('blog');
-const allTags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
-const tagCounts = allTags.map((tag) => ({
-	tag,
-	count: posts.filter((post) => post.data.tags.includes(tag)).length,
-}));
+const posts = await getCollection("blog");
+
+let tags = getUniqueTags(posts);
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={`Tags | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<h1>All Tags</h1>
-				<div class="tags-list">
-					{
-						tagCounts.map(({ tag, count }) => (
-							<a href={`/tags/${tag}`} class="tag-item">
-								<span class="tag-name">{tag}</span>
-								<span class="tag-count">({count})</span>
-							</a>
-						))
-					}
-				</div>
-			</section>
-		</main>
-		<Footer />
-		<style>
-			main {
-				width: 960px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 3em 1em;
-			}
-			h1 {
-				font-size: 2.5em;
-				margin-bottom: 1em;
-			}
-			.tags-list {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 1em;
-				margin-top: 2em;
-			}
-			.tag-item {
-				display: inline-block;
-				padding: 0.5em 1em;
-				background: #f3f4f6;
-				border-radius: 0.5em;
-				text-decoration: none;
-				color: #1e293b;
-				transition: all 0.2s ease;
-			}
-			.tag-item:hover {
-				background: #e5e7eb;
-				transform: translateY(-2px);
-			}
-			.tag-name {
-				font-weight: 600;
-			}
-			.tag-count {
-				color: #64748b;
-				margin-left: 0.5em;
-			}
-		</style>
-	</body>
-</html>
+<Layout title={`Tags | ${SITE.title}`}>
+  <Header />
+  <Main pageTitle="Tags" pageDesc="All the tags used in posts.">
+    <ul>
+      {tags.map(({ tag, tagName }) => <Tag {tag} {tagName} size="lg" />)}
+    </ul>
+  </Main>
+  <Footer />
+</Layout>
