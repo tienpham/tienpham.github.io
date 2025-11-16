@@ -1,13 +1,13 @@
-import type { Props } from "astro";
-import IconMail from "@/assets/icons/IconMail.svg";
-import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
-import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
-import IconTelegram from "@/assets/icons/IconTelegram.svg";
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+import IconMail from "@/assets/icons/IconMail.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconTelegram from "@/assets/icons/IconTelegram.svg";
+import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import { SITE } from "@/config";
+import type { Props } from "astro";
 
 interface Social {
   name: string;
@@ -81,3 +81,29 @@ export const SHARE_LINKS: Social[] = [
     icon: IconMail,
   },
 ] as const;
+
+export interface GiscusProps {
+  repo: `${string}/${string}`;
+  repoId: string;
+  category: string;
+  categoryId: string;
+  mapping: "url" | "title" | "og:title" | "specific" | "number" | "pathname";
+  reactionsEnabled: "0" | "1";
+  emitMetadata: "0" | "1";
+  inputPosition: "top" | "bottom";
+  lang: string;
+  loading: "lazy" | "eager";
+}
+
+export const GISCUS: GiscusProps = {
+  repo: "tienpham/tienpham.github.io",
+  repoId: "MDEwOlJlcG9zaXRvcnkxMjAxNDY5NjE=", // Get this from https://giscus.app/
+  category: "General", // Discussion category name
+  categoryId: "DIC_kwDOBylMEc4Cx25R", // Get this from https://giscus.app/
+  mapping: "pathname",
+  reactionsEnabled: "1",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  lang: "en",
+  loading: "lazy",
+};
