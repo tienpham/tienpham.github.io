@@ -10,6 +10,7 @@ tags:
   - ai
   - rag
   - agent
+ogImage: ../../assets/images/rag-agentic-ai.jpg
 description: Một câu chuyện thiền về RAG, Agentic AI và Orchestration qua hình ảnh ba vòng tròn trên cát. Chú tiểu khám phá cách “biết”, “làm” và “thấy” hòa thành một — nơi tri thức, hành động và tỉnh thức gặp nhau.
 ---
 
