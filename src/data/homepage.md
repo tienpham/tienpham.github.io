@@ -10,8 +10,8 @@ title: "Welcome to Reflexify"
 Chỉ ngồi xuống, như đặt một chiếc lá lên mặt nước:  
 lặng, nhẹ, và tự nó hiển bày.
 
-> _Thiền chẳng thêm gì vào ta –  
-> Thiền chỉ lấy đi những gì không phải ta._
+> Thiền chẳng thêm gì vào ta –  
+> Thiền chỉ lấy đi những gì không phải ta.
 
 ---
 
@@ -31,6 +31,7 @@ Chỉ có **cái biết đang biết** —
 lặng lẽ sáng từ vô thuở.
 
 ---
+
 Bạn sẽ nhận ra:  
 Không có hành trình nào để hoàn thành.  
 Không có “phiên bản tốt hơn của chính mình” để đạt tới.
@@ -44,5 +45,5 @@ bạn vốn đã tròn đầy, chẳng thiếu gì.
 Nơi người đọc và điều được đọc  
 cùng tan vào sự sáng trong vốn có.
 
-> _“Vô tâm trước vạn vật,  
-> tâm trước vạn vật vô.”_
+>Vô tâm trước vạn vật,  
+>tâm trước vạn vật vô.

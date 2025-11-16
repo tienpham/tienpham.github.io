@@ -1,10 +1,8 @@
 export const SITE = {
   website: "https://reflexify.me/", // replace this with your deployed domain
-  author: "Tien Pham",
   profile: "https://reflexify.me/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog.",
+  desc: "Reflexify.Me là không gian Thiền đương đại, nơi tri thức (RAG), hành động (Agentic AI) và sự tỉnh thức hội tụ. Những câu chuyện, góc nhìn và thực hành giúp kết nối mindfulness với công nghệ, mở ra cách thấy mới trong kỷ nguyên AI.",
   title: "Reflexify",
-  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
