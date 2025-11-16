@@ -1,5 +1,4 @@
 ---
-author: Tien Pham
 pubDatetime: 2025-11-16T13:00:00Z
 title: RAG & Agentic AI
 slug: rag-agentic-ai
