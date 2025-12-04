@@ -55,10 +55,10 @@ Ta khẽ thở ra.
 Lời Thầy và bài kệ ấy – một bên vững vàng như giàn kinh sách, một bên sắc lịm như ánh chớp – thật khác nhau một trời một vực.
 
 Còn với ta,
-Sắc chỉ là Sắc.
-Không chỉ là Không.
-Không cầu giải thích.
-Không cần tìm nghĩa.
+> Sắc chỉ là Sắc.  
+> Không chỉ là Không.  
+> Không cầu giải thích.  
+> Không cần tìm nghĩa.
 
 Và ngay nơi gốc bồ đề ấy,
 giữa tiếng kinh đang ngân,
