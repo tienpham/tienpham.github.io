@@ -10,6 +10,7 @@ import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import Subscribe from "@/components/Subscribe.astro";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
@@ -31,6 +32,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <article class="app-prose mx-auto max-w-app">
         <Content />
       </article>
+    </section>
+
+    <Hr />
+
+    <section id="subscribe" class="mx-auto max-w-app py-8">
+      <Subscribe />
     </section>
 
     <Hr />

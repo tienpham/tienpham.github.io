@@ -1,0 +1,13 @@
+---
+import { SITE } from "@/config";
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<section class:list={["subscribe-section", className]}>
+  <script async data-uid={SITE.convertKitFormId} src={`https://tien-pham.kit.com/${SITE.convertKitFormId}/index.js`}></script>
+</section>
