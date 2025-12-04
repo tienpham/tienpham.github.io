@@ -89,4 +89,4 @@ In Part 2, we'll dive deep into the core mechanism that makes this architecture 
 
 ---
 
-Continue to Part 2: The Core — SELECT FOR UPDATE SKIP LOCKED
+Continue to [Part 2: The Core — SELECT FOR UPDATE SKIP LOCKED](/posts/distributed-background-job-processing-in-rust-and-postgresql-part-2)
