@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-12-07T13:00:00Z
+pubDatetime: 2025-12-07T00:00:00Z
 title: Distributed Background Job Processing in Rust and Postgresql - Part 3
 slug: distributed-background-job-processing-in-rust-and-postgresql-part-3
 featured: false
