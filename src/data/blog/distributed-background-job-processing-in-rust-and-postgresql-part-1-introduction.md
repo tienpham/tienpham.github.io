@@ -8,6 +8,7 @@ tags:
   - tech
   - rust
   - postgresql
+  - distributed-system
 ogImage: ../../assets/images/architecture-overview.svg
 description: This is Part 1 of a 5-part series on building production-grade distributed job processing systems in Rust using PostgreSQL. Why PostgreSQL is Your Secret Weapon for Job.
 ---

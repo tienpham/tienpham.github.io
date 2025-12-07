@@ -8,14 +8,13 @@ tags:
   - tech
   - rust
   - postgresql
-  - distributed
+  - distributed-system
 ogImage: ../../assets/images/architecture-overview.svg
 description: This is Part 2 of a 5-part series on building production-grade distributed job processing systems in Rust using PostgreSQL. The Core — SELECT FOR UPDATE SKIP LOCKED.
 ---
 
 This is Part 2 of a 5-part series on building production-grade distributed job processing systems in Rust using PostgreSQL.
 
----
 
 ### The Challenge of Concurrent Dequeuing
 
@@ -210,6 +209,6 @@ The key insight is that we're leveraging PostgreSQL's battle-tested concurrency 
 
 ---
 
-Continue to Part 3: Reliability Through Leases & Heartbeats
+Continue to [Part 3: Reliability Through Leases & Heartbeats](/posts/distributed-background-job-processing-in-rust-and-postgresql-part-3)
 
 Previous: [Part 1: Introduction & Architecture Overview](/posts/distributed-background-job-processing-in-rust-and-postgresql-part-1-introduction)
