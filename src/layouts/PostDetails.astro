@@ -10,7 +10,6 @@ import ShareLinks from "@/components/ShareLinks.astro";
 import Subscribe from "@/components/Subscribe.astro";
 import BackButton from "@/components/BackButton.astro";
 import BackToTopButton from "@/components/BackToTopButton.astro";
-import Comments from "@/components/Comments";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
@@ -136,9 +135,6 @@ const nextPost =
     <Subscribe />
 
     <hr class="my-6 border-dashed" />
-
-    <!-- Comments Section -->
-    <Comments client:only="react" />
 
     <hr class="my-6 border-dashed" />
 

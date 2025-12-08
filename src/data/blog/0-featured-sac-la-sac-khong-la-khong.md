@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-12-2T13:00:00Z
+pubDatetime: 2025-12-08T13:00:00Z
 title: Không Sắc - Sắc Không
 slug: khong-sac-sac-khong
 featured: true
@@ -25,7 +25,7 @@ Tiếng chuông vang lên – từng nhịp đều đặn như bước chân c�
 Trong chánh điện, các Thầy đang tụng kinh.
 Âm vang xa xăm, không rõ từng chữ, nhưng ta nhận ra nhịp quen thuộc của Bát Nhã Tâm Kinh:
 
-> Xá Lợi Tử, sắc bất dị không, không bất dị sắc, sắc tức thị không, không tức thị sắc…
+> Xá Lợi Tử, sắc chẳng khác không, không chẳng khác sắc, sắc tức là không, không tức là sắc…
 
 Ta ngồi xuống chiếc ghế dưới gốc bồ đề cổ thụ.
 Tán lá già che bóng, tiếng lá xào xạc như trò chuyện cùng nắng.
@@ -45,9 +45,9 @@ Ta mỉm cười, gật nhẹ – không phải để chứng tỏ hiểu mà b�
 Rồi đột nhiên, giữa những lời giảng của thầy, trong ta bỗng vọng lên bài kệ của anh chàng cư sĩ họ Lư – những lời như lưỡi dao cắt thẳng vào gốc rễ:
 
 
-> Bồ đề vốn chẳng cây,  
-> Gương sáng cũng chẳng đài,  
-> Xưa nay không một vật,  
+> Bồ đề vốn chẳng cây,
+> Gương sáng cũng chẳng đài,
+> Xưa nay không một vật,
 > Nơi nào dính bụi trần?
 
 
@@ -55,9 +55,9 @@ Ta khẽ thở ra.
 Lời Thầy và bài kệ ấy – một bên vững vàng như giàn kinh sách, một bên sắc lịm như ánh chớp – thật khác nhau một trời một vực.
 
 Còn với ta,
-> Sắc chỉ là Sắc.  
-> Không chỉ là Không.  
-> Không cầu giải thích.  
+> Sắc đơn giản...chỉ là Sắc.
+> Không đơn giản...chỉ là Không.
+> Không cầu giải thích.
 > Không cần tìm nghĩa.
 
 Và ngay nơi gốc bồ đề ấy,
@@ -66,3 +66,7 @@ giữa hơi nóng miền Nam vẫn lặn vào đất,
 ta chợt thấy rõ một điều rất đơn giản:
 
 > Ta thấy chính mình.
+
+Chẳng phải đơn giản hơn đống kinh sách mà vị Thầy kia đã nhồi nhét vào đầu hay sao?
+Chẳng phải ngay nơi đó Tánh Không tự hiển lộ hay sao?
+Đối với ta Đạo thật là...giản dị.
