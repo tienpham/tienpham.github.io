@@ -12,7 +12,6 @@ tags:
 ogImage: ../../assets/images/semaphore-flow.svg
 description: This is Part 5 of a 5-part series on building production-grade distributed job processing systems in Rust using PostgreSQL. Production Patterns.
 ---
-
 ## Part 5: Production Patterns — Cancellation, Handlers & Multi-Tenancy
 
 *This is Part 5 of a 5-part series on building production-grade distributed job processing systems in Rust using PostgreSQL.*
