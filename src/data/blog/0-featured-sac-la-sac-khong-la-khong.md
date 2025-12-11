@@ -58,7 +58,7 @@ Còn với ta,
 > Sắc đơn giản...chỉ là Sắc.<br>
 > Không đơn giản...chỉ là Không.<br>
 > Không cầu giải thích.<br>
-> Không cần tìm nghĩa.<br>
+> Không cần tìm nghĩa.
 
 Và ngay nơi gốc bồ đề ấy,
 giữa tiếng kinh đang ngân,
@@ -67,6 +67,6 @@ ta chợt thấy rõ một điều rất đơn giản:
 
 > Ta thấy chính mình.
 
-Chẳng phải đơn giản hơn đống kinh sách mà vị Thầy kia đã nhồi nhét vào đầu hay sao?
-Chẳng phải ngay nơi đó Tánh Không tự hiển lộ hay sao?
-Đối với ta Đạo thật là...giản dị.
+Chẳng phải đơn giản hơn đống kinh sách mà vị Thầy kia đã nhồi nhét vào đầu hay sao?<br>
+Chẳng phải ngay nơi đó Tánh Không tự hiển lộ hay sao?<br>
+Đối với ta Đạo thật là ... giản dị.
