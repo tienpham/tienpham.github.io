@@ -101,9 +101,9 @@ export const GISCUS: GiscusProps = {
   category: "General", // Discussion category name
   categoryId: "DIC_kwDOBylMEc4Cx25R", // Get this from https://giscus.app/
   mapping: "pathname",
-  reactionsEnabled: "1",
+  reactionsEnabled: "0",
   emitMetadata: "0",
   inputPosition: "bottom",
   lang: "en",
-  loading: "lazy",
+  loading: "eager",
 };

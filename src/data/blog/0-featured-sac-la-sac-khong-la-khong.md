@@ -45,9 +45,9 @@ Ta mỉm cười, gật nhẹ – không phải để chứng tỏ hiểu mà b�
 Rồi đột nhiên, giữa những lời giảng của thầy, trong ta bỗng vọng lên bài kệ của anh chàng cư sĩ họ Lư – những lời như lưỡi dao cắt thẳng vào gốc rễ:
 
 
-> Bồ đề vốn chẳng cây,
-> Gương sáng cũng chẳng đài,
-> Xưa nay không một vật,
+> Bồ đề vốn chẳng cây,<br>
+> Gương sáng cũng chẳng đài,<br>
+> Xưa nay không một vật,<br>
 > Nơi nào dính bụi trần?
 
 
@@ -55,10 +55,10 @@ Ta khẽ thở ra.
 Lời Thầy và bài kệ ấy – một bên vững vàng như giàn kinh sách, một bên sắc lịm như ánh chớp – thật khác nhau một trời một vực.
 
 Còn với ta,
-> Sắc đơn giản...chỉ là Sắc.
-> Không đơn giản...chỉ là Không.
-> Không cầu giải thích.
-> Không cần tìm nghĩa.
+> Sắc đơn giản...chỉ là Sắc.<br>
+> Không đơn giản...chỉ là Không.<br>
+> Không cầu giải thích.<br>
+> Không cần tìm nghĩa.<br>
 
 Và ngay nơi gốc bồ đề ấy,
 giữa tiếng kinh đang ngân,

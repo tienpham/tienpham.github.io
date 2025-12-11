@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <defs>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="650" fill="#0f172a"/>
+  
+  <!-- Grid -->
+  <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+    <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+  </pattern>
+  <rect width="900" height="650" fill="url(#grid)" opacity="0.5"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f8fafc" text-anchor="middle">Middleware Execution Flow</text>
+  <text x="450" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Hooks at each stage of agent execution</text>
+  
+  <!-- Main container -->
+  <rect x="50" y="75" width="800" height="530" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="450" y="100" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f8fafc" text-anchor="middle">AGENT EXECUTION FLOW</text>
+  
+  <!-- EXECUTOR LOOP section -->
+  <rect x="70" y="115" width="760" height="420" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="90" y="140" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">EXECUTOR LOOP</text>
+  
+  <!-- before_step -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="155" width="140" height="35" rx="6" fill="url(#violetGrad)"/>
+    <text x="170" y="178" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">before_step</text>
+  </g>
+  <text x="250" y="178" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd">← Middleware hook</text>
+  
+  <path d="M 170 190 L 170 210" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- STEPPER.step() container -->
+  <rect x="100" y="215" width="700" height="200" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="450" y="235" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">STEPPER.step()</text>
+  
+  <!-- before_llm -->
+  <g filter="url(#shadow)">
+    <rect x="130" y="250" width="140" height="35" rx="6" fill="url(#violetGrad)"/>
+    <text x="200" y="273" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">before_llm</text>
+  </g>
+  <text x="280" y="273" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd">← Can modify messages</text>
+  
+  <path d="M 200 285 L 200 305" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- LLM Call -->
+  <g filter="url(#shadow)">
+    <rect x="130" y="310" width="140" height="35" rx="6" fill="url(#blueGrad)"/>
+    <text x="200" y="333" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">LLM Call</text>
+  </g>
+  
+  <path d="M 200 345 L 200 365" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- after_llm -->
+  <g filter="url(#shadow)">
+    <rect x="130" y="370" width="140" height="35" rx="6" fill="url(#violetGrad)"/>
+    <text x="200" y="393" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">after_llm</text>
+  </g>
+  <text x="280" y="393" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd">← Can modify response</text>
+  
+  <!-- after_step -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="430" width="140" height="35" rx="6" fill="url(#violetGrad)"/>
+    <text x="170" y="453" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">after_step</text>
+  </g>
+  <text x="250" y="453" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd">← Can transform outcome</text>
+  
+  <path d="M 170 415 L 170 430" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- IF ExecuteTools section -->
+  <rect x="450" y="250" width="330" height="155" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="615" y="275" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6ee7b7" text-anchor="middle">IF StepOutcome::ExecuteTools</text>
+  
+  <!-- before_tool -->
+  <g filter="url(#shadow)">
+    <rect x="480" y="290" width="130" height="30" rx="5" fill="url(#violetGrad)"/>
+    <text x="545" y="310" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="white" text-anchor="middle">before_tool</text>
+  </g>
+  <text x="620" y="310" font-family="system-ui, sans-serif" font-size="9" fill="#c4b5fd">← Per tool</text>
+  
+  <path d="M 545 320 L 545 335" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Tool.execute -->
+  <g filter="url(#shadow)">
+    <rect x="480" y="340" width="130" height="30" rx="5" fill="url(#emeraldGrad)"/>
+    <text x="545" y="360" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="white" text-anchor="middle">Tool.execute</text>
+  </g>
+  
+  <path d="M 545 370 L 545 385" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- after_tool -->
+  <g filter="url(#shadow)">
+    <rect x="480" y="390" width="130" height="30" rx="5" fill="url(#violetGrad)"/>
+    <text x="545" y="410" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="white" text-anchor="middle">after_tool</text>
+  </g>
+  <text x="620" y="410" font-family="system-ui, sans-serif" font-size="9" fill="#c4b5fd">← success + duration</text>
+  
+  <!-- Loop indicator -->
+  <text x="100" y="485" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">[Loop continues until Complete or Failed]</text>
+  
+  <!-- on_complete -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="500" width="140" height="35" rx="6" fill="url(#amberGrad)"/>
+    <text x="170" y="523" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white" text-anchor="middle">on_complete</text>
+  </g>
+  <text x="250" y="523" font-family="system-ui, sans-serif" font-size="10" fill="#fcd34d">← Called once at end (success or failure)</text>
+  
+  <path d="M 170 465 L 170 500" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <g transform="translate(550, 470)">
+    <rect x="0" y="0" width="230" height="100" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="115" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" text-anchor="middle">HOOK TYPES</text>
+    
+    <rect x="15" y="35" width="12" height="12" rx="2" fill="url(#violetGrad)"/>
+    <text x="35" y="45" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Middleware hooks</text>
+    
+    <rect x="15" y="55" width="12" height="12" rx="2" fill="url(#blueGrad)"/>
+    <text x="35" y="65" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">LLM operations</text>
+    
+    <rect x="15" y="75" width="12" height="12" rx="2" fill="url(#emeraldGrad)"/>
+    <text x="35" y="85" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Tool execution</text>
+    
+    <rect x="120" y="35" width="12" height="12" rx="2" fill="url(#amberGrad)"/>
+    <text x="140" y="45" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Completion hook</text>
+  </g>
+</svg>

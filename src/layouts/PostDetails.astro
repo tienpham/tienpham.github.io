@@ -10,6 +10,8 @@ import ShareLinks from "@/components/ShareLinks.astro";
 import Subscribe from "@/components/Subscribe.astro";
 import BackButton from "@/components/BackButton.astro";
 import BackToTopButton from "@/components/BackToTopButton.astro";
+import TableOfContents from "@/components/TableOfContents.astro";
+import Comments from "@/components/Comments.astro";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
@@ -36,7 +38,7 @@ const {
   hideEditPost,
 } = post.data;
 
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 let ogImageUrl: string | undefined;
 
@@ -86,6 +88,7 @@ const nextPost =
 <Layout {...layoutProps}>
   <Header />
   <BackButton />
+  <TableOfContents headings={headings} />
   <main
     id="main-content"
     class:list={[
@@ -132,9 +135,7 @@ const nextPost =
 
     <hr class="my-6 border-dashed" />
 
-    <Subscribe />
-
-    <hr class="my-6 border-dashed" />
+    <Comments />
 
     <hr class="my-6 border-dashed" />
 
