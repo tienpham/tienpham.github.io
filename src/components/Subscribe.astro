@@ -7,5 +7,33 @@ const { class: className } = Astro.props;
 ---
 
 <section class:list={["subscribe-section", className]}>
-  <script is:inline src="https://tien-pham.kit.com/3f38ecf443/index.js" data-uid="3f38ecf443" async></script>
+  <div class="rounded-lg border border-border bg-muted/30 p-6">
+    <form
+      name="subscribe"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="flex flex-col gap-3 sm:flex-row"
+    >
+      <input type="hidden" name="form-name" value="subscribe" />
+      <p class="hidden">
+        <label>
+          Don't fill this out: <input name="bot-field" />
+        </label>
+      </p>
+      <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        class="flex-1 rounded-md border border-border bg-background px-4 py-2 text-sm focus:border-accent focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="rounded-md bg-accent px-6 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
 </section>
