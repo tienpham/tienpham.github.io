@@ -1,0 +1,56 @@
+---
+import { GISCUS } from "@/constants";
+---
+
+<section class="giscus-wrapper mt-8">
+  <script
+    src="https://giscus.app/client.js"
+    data-repo={GISCUS.repo}
+    data-repo-id={GISCUS.repoId}
+    data-category={GISCUS.category}
+    data-category-id={GISCUS.categoryId}
+    data-mapping={GISCUS.mapping}
+    data-strict="0"
+    data-reactions-enabled={GISCUS.reactionsEnabled}
+    data-emit-metadata={GISCUS.emitMetadata}
+    data-input-position={GISCUS.inputPosition}
+    data-theme="preferred_color_scheme"
+    data-lang={GISCUS.lang}
+    data-loading={GISCUS.loading}
+    crossorigin="anonymous"
+    async
+  ></script>
+</section>
+
+<script>
+  function updateGiscusTheme() {
+    const theme = document.documentElement.getAttribute("data-theme") || "light";
+    const giscusTheme = theme === "dark" ? "dark" : "light";
+
+    const iframe = document.querySelector<HTMLIFrameElement>(
+      "iframe.giscus-frame"
+    );
+
+    if (iframe) {
+      iframe.contentWindow?.postMessage(
+        { giscus: { setConfig: { theme: giscusTheme } } },
+        "https://giscus.app"
+      );
+    }
+  }
+
+  // Update theme when it changes
+  const observer = new MutationObserver(updateGiscusTheme);
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"],
+  });
+
+  // Initial theme sync after giscus loads
+  window.addEventListener("message", (event) => {
+    if (event.origin !== "https://giscus.app") return;
+    if (event.data?.giscus?.discussion) {
+      updateGiscusTheme();
+    }
+  });
+</script>
