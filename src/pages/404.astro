@@ -6,25 +6,458 @@ import LinkButton from "@/components/LinkButton.astro";
 import { SITE } from "@/config";
 ---
 
-<Layout title={`404 Not Found | ${SITE.title}`}>
+<Layout title={`404 - The Path Continues | ${SITE.title}`}>
   <Header />
 
   <main
     id="main-content"
-    class="mx-auto flex max-w-app flex-1 items-center justify-center"
+    class="relative mx-auto flex max-w-app flex-1 items-center justify-center overflow-hidden px-4"
   >
-    <div class="mb-14 flex flex-col items-center justify-center">
-      <h1 class="text-9xl font-bold text-accent">404</h1>
-      <span aria-hidden="true">¯\_(ツ)_/¯</span>
-      <p class="mt-4 text-2xl sm:text-3xl">Page Not Found</p>
-      <LinkButton
-        href="/"
-        class="my-6 text-lg underline decoration-dashed underline-offset-8"
-      >
-        Go back home
-      </LinkButton>
+    <!-- Floating particles background -->
+    <div class="particles" aria-hidden="true">
+      {Array.from({ length: 20 }).map((_, i) => (
+        <div class="particle" style={`--delay: ${i * 0.5}s; --x: ${Math.random() * 100}%; --duration: ${15 + Math.random() * 10}s;`} />
+      ))}
+    </div>
+
+    <!-- Neural network connections -->
+    <svg class="neural-bg" aria-hidden="true" viewBox="0 0 400 400">
+      <defs>
+        <radialGradient id="nodeGlow">
+          <stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <!-- Connection lines -->
+      <g class="connections" stroke="var(--color-accent)" stroke-opacity="0.15" fill="none">
+        <path d="M50,200 Q150,100 200,200" class="pulse-line" style="--delay: 0s" />
+        <path d="M200,200 Q250,300 350,200" class="pulse-line" style="--delay: 0.5s" />
+        <path d="M100,100 Q200,150 200,200" class="pulse-line" style="--delay: 1s" />
+        <path d="M200,200 Q200,250 300,300" class="pulse-line" style="--delay: 1.5s" />
+        <path d="M80,280 Q140,240 200,200" class="pulse-line" style="--delay: 2s" />
+        <path d="M200,200 Q260,160 320,120" class="pulse-line" style="--delay: 2.5s" />
+      </g>
+      <!-- Neural nodes -->
+      <g class="nodes">
+        <circle cx="50" cy="200" r="4" class="node" style="--delay: 0s" />
+        <circle cx="100" cy="100" r="3" class="node" style="--delay: 0.3s" />
+        <circle cx="80" cy="280" r="3" class="node" style="--delay: 0.6s" />
+        <circle cx="350" cy="200" r="4" class="node" style="--delay: 0.9s" />
+        <circle cx="300" cy="300" r="3" class="node" style="--delay: 1.2s" />
+        <circle cx="320" cy="120" r="3" class="node" style="--delay: 1.5s" />
+      </g>
+    </svg>
+
+    <div class="relative z-10 flex flex-col items-center justify-center text-center">
+      <!-- Ensō circle with 404 -->
+      <div class="enso-container">
+        <svg class="enso" viewBox="0 0 200 200" aria-hidden="true">
+          <circle
+            cx="100"
+            cy="100"
+            r="80"
+            fill="none"
+            stroke="var(--color-accent)"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-dasharray="440 60"
+            class="enso-circle"
+          />
+        </svg>
+        <span class="enso-number">404</span>
+      </div>
+
+      <!-- Zen message -->
+      <div class="mt-6 space-y-2">
+        <p class="text-lg opacity-80 sm:text-xl">
+          <span class="typing-text">The page you seek does not exist...</span>
+        </p>
+        <p class="text-sm opacity-60">
+          — yet every path leads somewhere
+        </p>
+      </div>
+
+      <!-- Haiku-style wisdom -->
+      <div class="my-8 space-y-1 text-sm italic opacity-70">
+        <p>Empty response waits,</p>
+        <p>Neural paths seek connection—</p>
+        <p>Return to the source.</p>
+      </div>
+
+      <!-- Breathing indicator -->
+      <div class="breathing-dot mb-6" aria-hidden="true">
+        <span class="dot"></span>
+        <span class="ring"></span>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="flex flex-col items-center gap-5 sm:flex-row">
+        <a
+          href="/"
+          class="home-btn group relative overflow-hidden rounded-full px-8 py-3 font-medium"
+        >
+          <span class="btn-bg"></span>
+          <span class="btn-glow"></span>
+          <span class="relative z-10 flex items-center gap-2">
+            <svg class="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            Return Home
+          </span>
+        </a>
+        <a
+          href="/search/"
+          class="search-btn group relative flex items-center gap-2 px-6 py-3 text-foreground/70 transition-all duration-300 hover:text-accent"
+        >
+          <span class="search-line"></span>
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <span class="relative">
+            Search Instead
+            <span class="search-underline"></span>
+          </span>
+        </a>
+      </div>
     </div>
   </main>
 
   <Footer />
 </Layout>
+
+<style>
+  /* Floating particles */
+  .particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    left: var(--x);
+    bottom: -10px;
+    opacity: 0.3;
+    animation: float var(--duration) ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-50vh) translateX(20px);
+      opacity: 0.5;
+    }
+    90% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: translateY(-100vh) translateX(-20px);
+      opacity: 0;
+    }
+  }
+
+  /* Neural network background */
+  .neural-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    opacity: 0.4;
+  }
+
+  .pulse-line {
+    stroke-width: 1.5;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: drawLine 3s ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes drawLine {
+    0%, 100% {
+      stroke-dashoffset: 200;
+      stroke-opacity: 0.1;
+    }
+    50% {
+      stroke-dashoffset: 0;
+      stroke-opacity: 0.3;
+    }
+  }
+
+  .node {
+    fill: var(--color-accent);
+    opacity: 0.4;
+    animation: pulse 2s ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.3;
+      r: 3;
+    }
+    50% {
+      opacity: 0.8;
+      r: 5;
+    }
+  }
+
+  /* Ensō circle */
+  .enso-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .enso-circle {
+    transform-origin: center;
+    animation: drawEnso 4s ease-out forwards, rotateEnso 20s linear infinite;
+  }
+
+  @keyframes drawEnso {
+    0% {
+      stroke-dasharray: 0 500;
+      opacity: 0;
+    }
+    100% {
+      stroke-dasharray: 440 60;
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotateEnso {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .enso-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Typing effect for message */
+  .typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--color-accent);
+    animation: typing 2s steps(35) 1.5s forwards, blink 0.8s step-end infinite;
+    width: 0;
+  }
+
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* Breathing dot indicator */
+  .breathing-dot {
+    position: relative;
+    width: 12px;
+    height: 12px;
+  }
+
+  .dot {
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    border-radius: 50%;
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  .ring {
+    position: absolute;
+    inset: -8px;
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    opacity: 0;
+    animation: ripple 4s ease-out infinite;
+  }
+
+  @keyframes breathe {
+    0%, 100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+  /* Home button - Primary CTA */
+  .home-btn {
+    color: var(--color-accent);
+    border: 1.5px solid var(--color-accent);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .home-btn .btn-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: inherit;
+  }
+
+  .home-btn .btn-glow {
+    position: absolute;
+    inset: -2px;
+    background: var(--color-accent);
+    border-radius: inherit;
+    opacity: 0;
+    filter: blur(12px);
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  .home-btn:hover {
+    color: var(--color-background);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -8px var(--color-accent);
+  }
+
+  .home-btn:hover .btn-bg {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .home-btn:hover .btn-glow {
+    opacity: 0.4;
+  }
+
+  .home-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px -4px var(--color-accent);
+  }
+
+  /* Search button - Secondary */
+  .search-btn {
+    position: relative;
+  }
+
+  .search-btn .search-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 1px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+    transform: translateY(-50%);
+  }
+
+  .search-btn .search-underline {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+  }
+
+  .search-btn:hover .search-underline {
+    transform: scaleX(1);
+    transform-origin: left;
+    background: var(--color-accent);
+  }
+
+  .search-btn:hover .search-line {
+    width: 12px;
+  }
+
+  .search-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .particle,
+    .pulse-line,
+    .node,
+    .enso-circle,
+    .enso-number,
+    .typing-text,
+    .dot,
+    .ring {
+      animation: none;
+    }
+    .enso-circle {
+      stroke-dasharray: 440 60;
+      opacity: 1;
+    }
+    .enso-number,
+    .typing-text {
+      opacity: 1;
+      width: auto;
+      border-right: none;
+    }
+    .home-btn,
+    .home-btn .btn-bg,
+    .home-btn .btn-glow,
+    .search-btn,
+    .search-btn .search-underline,
+    .search-btn .search-line {
+      transition: none;
+    }
+  }
+</style>
