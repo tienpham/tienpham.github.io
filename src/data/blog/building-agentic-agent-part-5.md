@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-12-14T10:00:00Z
+pubDatetime: 2025-12-15T10:00:00Z
 title: Building Agentic AI Systems - Part 5 - Middleware Pipeline
 slug: building-agentic-agent-part-5
 featured: false

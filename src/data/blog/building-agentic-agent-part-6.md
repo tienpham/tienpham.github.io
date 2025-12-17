@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-12-14T10:10:00Z
+pubDatetime: 2025-12-15T10:10:00Z
 title: Building Agentic AI Systems - Part 6 - Building Tools
 slug: building-agentic-agent-part-6
 featured: false

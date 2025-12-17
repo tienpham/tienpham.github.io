@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-12-14T10:15:00Z
+pubDatetime: 2025-12-16T10:15:00Z
 title: Building Agentic AI Systems - Part 7 - Putting It All Together
 slug: building-agentic-agent-part-7
 featured: false
