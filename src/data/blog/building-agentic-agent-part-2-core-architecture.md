@@ -14,8 +14,6 @@ description: Part 1 - Introduction to Agentic Agents - Explains what makes agent
 
 *The Profile + Stepper + Executor pattern for clean, extensible agent design*
 
----
-
 In [Part 1](/posts/building-agentic-agent-part-1-introduction), we explored what makes agentic agents different from traditional RAG systems. Now let's dive into the architecture that makes them possible.
 
 ## The Profile + Stepper + Executor Pattern
@@ -262,10 +260,7 @@ The Profile + Stepper + Executor pattern provides several benefits:
 
 The key insight is that **configuration** (what tools, what model, what prompts) should be separate from **execution logic** (how to run a step) which should be separate from **orchestration** (the loop, tool dispatch, middleware).
 
----
 
-**Next up**: Part 3 - Context Management: AgentContext vs ExecutionContext
-
----
+**Next up**: [Part 3 - Context Management: AgentContext vs ExecutionContext](/posts/building-agentic-agent-part-3)
 
 *This series is based on the Reflexify agentic architecture, designed for production multi-tenant SaaS applications.*
