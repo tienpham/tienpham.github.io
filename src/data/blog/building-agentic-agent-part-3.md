@@ -8,7 +8,7 @@ tags:
   - tech
   - ai
   - agents
-description: Part 3 - Deep dive into the dual-context pattern: AgentContext for clean user-facing conversations and ExecutionContext for full internal reasoning traces. Explains why this separation matters for debugging and UX.
+description: Part 3 - Deep dive into the dual-context pattern - AgentContext for clean user-facing conversations and ExecutionContext for full internal reasoning traces. Explains why this separation matters for debugging and UX.
 ---
 
 *Understanding the dual-context pattern: AgentContext vs ExecutionContext*
