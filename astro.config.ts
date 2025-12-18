@@ -3,6 +3,8 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
+import rehypeExternalLinks from "rehype-external-links";
+import rehypeTrailingSlash from "./src/utils/rehypeTrailingSlash";
 import {
   transformerNotationDiff,
   transformerNotationHighlight,
@@ -16,11 +18,19 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  trailingSlash: "always",
   integrations: [sitemap({
     filter: page => SITE.showArchives || !page.endsWith("/archives"),
   }), react()],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    rehypePlugins: [
+      [rehypeExternalLinks, {
+        target: "_blank",
+        rel: ["noopener", "noreferrer"]
+      }],
+      rehypeTrailingSlash,
+    ],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "min-light", dark: "night-owl" },
