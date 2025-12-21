@@ -282,4 +282,4 @@ struct SearchInput {
 **Next up**: [Part 7 - Putting It All Together: Complete Implementation →](/posts/building-agentic-agent-part-7)
 
 
-*This series is based on the Ragify agentic architecture, designed for production multi-tenant SaaS applications.*
+*This series is based on the Reflexify agentic architecture, designed for production multi-tenant SaaS applications.*

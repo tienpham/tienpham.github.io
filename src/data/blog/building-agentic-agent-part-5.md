@@ -304,4 +304,4 @@ The order of registration matters—earlier middleware wrap later ones in the on
 **Next up**: [Part 6 - Building Tools: Type-Safe Agent Capabilities →](/posts/building-agentic-agent-part-6)
 
 
-*This series is based on the Ragify agentic architecture, designed for production multi-tenant SaaS applications.*
+*This series is based on the Reflexify agentic architecture, designed for production multi-tenant SaaS applications.*

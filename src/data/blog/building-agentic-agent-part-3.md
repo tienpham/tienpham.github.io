@@ -258,4 +258,4 @@ The stepper reads from the user-facing context (what the user asked), records in
 **Next up**: [Part 4 - The Stepper Pattern: ReAct vs Function Calling](/posts/building-agentic-agent-part-4)
 
 
-*This series is based on the Ragify agentic architecture, designed for production multi-tenant SaaS applications.*
+*This series is based on the Reflexify agentic architecture, designed for production multi-tenant SaaS applications.*

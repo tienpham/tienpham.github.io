@@ -260,4 +260,4 @@ Both steppers produce the same `StepOutcome` types, so they're interchangeable f
 
 **Next up**: [Part 5 - Middleware Pipeline: Cross-Cutting Concerns →](/posts/building-agentic-agent-part-5)
 
-*This series is based on the Ragify agentic architecture, designed for production multi-tenant SaaS applications.*
+*This series is based on the Reflexify agentic architecture, designed for production multi-tenant SaaS applications.*

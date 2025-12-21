@@ -278,4 +278,4 @@ Whether you're building a simple Q&A bot or a complex autonomous agent, this pat
 6. [Part 6 - Building Tools: Type-Safe Agent Capabilities](/posts/building-agentic-agent-part-6)
 7. **Part 7 - Putting It All Together** (You are here)
 
-*This series is based on the Ragify agentic architecture, designed for production multi-tenant SaaS applications.*
+*This series is based on the Reflexify agentic architecture, designed for production multi-tenant SaaS applications.*
