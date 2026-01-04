@@ -1,0 +1,47 @@
+---
+// MatrixBackground.astro
+// AI-style matrix data stream background animation
+---
+
+<div id="matrix-wrapper" aria-hidden="true">
+  <canvas id="matrix-bg"></canvas>
+</div>
+
+<script>
+  import { initMatrixBackground } from "@/scripts/matrix-background";
+
+  // Initialize when page is ready
+  document.addEventListener("astro:page-load", () => {
+    initMatrixBackground();
+  });
+
+  // Fallback for initial load if astro:page-load already fired
+  if (document.readyState === "complete") {
+    initMatrixBackground();
+  } else {
+    document.addEventListener("DOMContentLoaded", () => {
+      initMatrixBackground();
+    });
+  }
+</script>
+
+<style is:global>
+  #matrix-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  html[data-theme="dark"] #matrix-wrapper {
+    opacity: 0.3;
+  }
+
+  #matrix-bg {
+    display: block;
+  }
+</style>

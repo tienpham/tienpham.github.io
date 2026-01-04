@@ -26,6 +26,11 @@ function setPreference() {
 function reflectPreference() {
   document.firstElementChild.setAttribute("data-theme", themeValue);
 
+  // Dispatch custom event for other scripts (e.g., matrix background)
+  window.dispatchEvent(new CustomEvent("theme-changed", {
+    detail: { theme: themeValue }
+  }));
+
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
 
   // Get a reference to the body element
