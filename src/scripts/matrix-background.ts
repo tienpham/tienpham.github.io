@@ -118,7 +118,7 @@ function updateNodes(): void {
 function hexToRgba(hex: string, alpha: number): string {
   let r: number, g: number, b: number;
   if (hex.length === 4) {
-    r = parseInt(hex[1] + hex[1], 16);
+    r = parseInt(hex + hex, 16);
     g = parseInt(hex[2] + hex[2], 16);
     b = parseInt(hex[3] + hex[3], 16);
   } else {
