@@ -19,9 +19,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: SITE.website,
   trailingSlash: "always",
-  integrations: [sitemap({
-    filter: page => SITE.showArchives || !page.endsWith("/archives"),
-  }), react()],
+  integrations: [sitemap(), react()],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
     rehypePlugins: [
